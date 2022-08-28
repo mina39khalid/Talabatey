@@ -9,6 +9,8 @@ class page2 extends StatefulWidget {
 
 class _page2State extends State<page2> {
   int count = 0;
+  int counts = 0 ;
+
 
   @override
   Widget build(BuildContext context) {
@@ -202,10 +204,18 @@ class _page2State extends State<page2> {
                                   IconButton(
                                       onPressed: () {
                                         setState(() {
-                                          if (count != 0) count= count --;
+                                          if ( count<0){
+                                            count= count -1;
+                                            counts = counts-6500;
+                                          }
+                                          else{
+                                            count= count -1;
+                                            counts = counts-6500;
+                                          }
+
                                         });
                                       },
-                                      icon: Icon(Icons.exposure_minus_1)),
+                                      icon: Icon(Icons.minimize_outlined)),
                                 ],
                               ),
                             ),
@@ -233,11 +243,20 @@ class _page2State extends State<page2> {
                                 children: [
                                   IconButton(
                                       onPressed: () {
+
                                         setState(() {
-                                          count = count ++;
+                                         if ( count>=0){
+                                           count = count +1;
+                                           counts = counts+6500;
+                                         }
+                                         else{
+                                           count = count +1;
+                                           counts = counts+6500;
+                                         }
+
                                         });
                                       },
-                                      icon: Icon(Icons.exposure_plus_1)),
+                                      icon: Icon(Icons.add)),
                                 ],
                               ),
                             )
@@ -257,7 +276,7 @@ class _page2State extends State<page2> {
                               style: TextStyle(color: Colors.red, fontSize: 18),
                             ),
                             Text(
-                              ' 6500',
+                              ' $counts',
                               style: TextStyle(color: Colors.red, fontSize: 18),
                             ),
                           ],
