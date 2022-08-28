@@ -498,7 +498,7 @@ class _pageState extends State<page> {
                                 ),
                                 post('باي بيتزا','المنصور','جيد جدا','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=600'),
                               ])),
-                     
+
                     ],
                   ),
                 ),
