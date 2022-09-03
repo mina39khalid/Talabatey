@@ -38,472 +38,488 @@ class _pageState extends State<page> {
           elevation: 0,
         ),
         body: SingleChildScrollView(
-            scrollDirection: Axis.vertical,
             child: Column(
               children: [
-                Container(
-                  height: 150,
-                  padding: EdgeInsets.all(10),
+               Padding( padding: EdgeInsets.all(10)),
+
+                  Container(
+                    height: 150,
+                    child:
+                    ListView.builder(
+scrollDirection: Axis.horizontal,
+                        itemCount: 15,
+                        itemBuilder: (BuildContext context, int index) {
+                          return
+                            Row(
+                                                  children: [
+                                                    Row(
+                                                      children: [
+
+                                                        Column(
+                                                          children: [
+                                                            Container( height: 100,
+                                                                child: First('https://images.pexels.com/photos/4084927/pexels-photo-4084927.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                            Container(height: 30,
+                                                              child: Text ('المعجنات'),),
+                                                          ],
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+                                                    Column(
+                                                      children: [
+                                                        Container(height: 100,
+                                                            child: First('https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('المكتبات'),),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/103124/pexels-photo-103124.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('فطور صباحي'),),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('الزهور'),),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('بطاقات تعبئة'),),
+                                                      ],
+                                                    ),
+
+                          SizedBox(
+                            width: 20,
+                          ),
+                                               Column(children: [
+                                                     Container(height:100,child: First('https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                     Container(height: 30, child: Text ('البن والقهوه'),),],),
+                                                    Column(children: [ Container(height:100,child: First('https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                      Container(height: 30, child: Text ('التجهيزات الغذائيه'),),],),
+
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+
+                                                    Column(children: [Container(height:100,child: First('https://images.pexels.com/photos/229789/pexels-photo-229789.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                      Container(height: 30, child: Text ('بحرية'),),],),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/1927383/pexels-photo-1927383.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('الحوم'),),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('الفواكه والخضار'),),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/1448721/pexels-photo-1448721.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('حلويات ومعجنات'),),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/3326215/pexels-photo-3326215.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('ماركت'),),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/1070053/pexels-photo-1070053.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('دايت فوود'),),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/1591055/pexels-photo-1591055.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('بلوشي'),),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      width: 20,
+                                                    ),
+
+                                                    Column(
+                                                      children: [
+                                                        Container(height:100,child: First('https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                                        Container(height: 30, child: Text ('المطاعم',style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),),),
+                                                      ],
+                                                    ),
+                                                  ],
+                                                );
+
+                        }),),
+
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
                   child: Column(
                     children: [
-                      Expanded(
-                        child: ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: [
-                            Column(
-                              children: [
-                                Container( height: 100,
-                                    child: First('https://images.pexels.com/photos/4084927/pexels-photo-4084927.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30,
-                                  child: Text ('المعجنات'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Column(
-                              children: [
-                                Container(height: 100,
-                                    child: First('https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('المكتبات'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/103124/pexels-photo-103124.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('فطور صباحي'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('الزهور'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('بطاقات تعبئة'),),
-                              ],
-                            ),
-
-      SizedBox(
-        width: 20,
-      ),
-                           Column(children: [
-                             Container(height:100,child: First('https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                             Container(height: 30, child: Text ('البن والقهوه'),),],),
-                            Column(children: [ Container(height:100,child: First('https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                              Container(height: 30, child: Text ('التجهيزات الغذائيه'),),],),
-
-                            SizedBox(
-                              width: 20,
-                            ),
-                         
-                            Column(children: [Container(height:100,child: First('https://images.pexels.com/photos/229789/pexels-photo-229789.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                              Container(height: 30, child: Text ('بحرية'),),],),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/1927383/pexels-photo-1927383.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('الحوم'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('الفواكه والخضار'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/1448721/pexels-photo-1448721.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('حلويات ومعجنات'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/3326215/pexels-photo-3326215.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('ماركت'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/1070053/pexels-photo-1070053.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('دايت فوود'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/1591055/pexels-photo-1591055.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('بلوشي'),),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-
-                            Column(
-                              children: [
-                                Container(height:100,child: First('https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                Container(height: 30, child: Text ('المطاعم',style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),),),
-                              ],
-                            ),
-                          ],
-                        ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(
+                            'المحلات الاكثر شيوعًا',
+                            style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            width: 200,
+                            height: 2,
+                            color: Colors.red,
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+                    height: 160,
+                    child:
+                    ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 15,
+                        itemBuilder: (BuildContext context, int index) {
+                          return
+                            Row(
+                              children: [
+                                Column(
+                                  children: [
+                                    Container(  height: 120,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.circular(20),),
+                                      child: three('https://images.pexels.com/photos/2955819/pexels-photo-2955819.jpeg?auto=compress&cs=tinysrgb&w=600'),
+                                    ),
+                                    Container(height: 40,
+                                      child: Text('عروس دمشق',style:  TextStyle(color: Colors.red,fontSize: 15),),),
+                                  ],
+                                ),
+
+                                SizedBox(
+                                  width: 20,height: 100,
+                                ),
+                                Column(
+                                  children: [
+                                    Container(  height: 120,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(20),),
+                                        child: three('https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600')),
+                                    Container(height: 40,
+                                      child: Text('بركر ميكرز',style:  TextStyle(color: Colors.red,fontSize: 15),),),
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 20,
+                                ),
+
+                                Column(
+                                  children: [
+                                    Container(  height: 120,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(20),),
+                                        child: three('https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')),
+                                    Container(height: 40,
+                                      child: Text('زرزور',style:  TextStyle(color: Colors.red,fontSize: 15),),),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 40,
+                                ),
+                              ],
+                            );
+
+                        }),),
+                ),
                 Container(
-                  height: 600,
+                  height: 70,
                   padding: EdgeInsets.all(10),
                   child: Column(
                     children: [
                       Expanded(
-                          child: ListView(
-                              scrollDirection: Axis.vertical,
-                              children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Text(
-                                  'المحلات الاكثر شيوعًا',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Container(
-                                  width: 200,
-                                  height: 2,
-                                  color: Colors.red,
-                                ),
-                              ],
-                            ),
-                            SizedBox(height: 20),
-                            Container(
-                              height: 180,
-                              padding: EdgeInsets.all(10),
-                              child: Column(
+                        child:
+                        ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 6,
+                            itemBuilder: (BuildContext context, int index) {
+                              return Row(
                                 children: [
-                                  Expanded(
-                                    child: ListView(
-                                      scrollDirection: Axis.horizontal,
+                                  Container(
+                                    width: 100,
+                                    height: 300,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[300],
+                                      borderRadius: BorderRadius.circular(25),
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Column(
-                                          children: [
-                                            Container(  height: 120,
-                                              decoration: BoxDecoration(
-                                                color: Colors.grey,
-                                                borderRadius: BorderRadius.circular(20),),
-                                              child: three('https://images.pexels.com/photos/2955819/pexels-photo-2955819.jpeg?auto=compress&cs=tinysrgb&w=600'),
-                                            ),
-                                            Container(height: 40,
-                                              child: Text('عروس دمشق',style:  TextStyle(color: Colors.red,fontSize: 15),),),
-                                          ],
-                                        ),
-
-                                        SizedBox(
-                                          width: 20,height: 100,
-                                        ),
-                                        Column(
-                                          children: [
-                                            Container(  height: 120,
-                                                decoration: BoxDecoration(
-                                                  color: Colors.grey,
-                                                  borderRadius: BorderRadius.circular(20),),
-                                                child: three('https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600')),
-                                      Container(height: 40,
-                                            child: Text('بركر ميكرز',style:  TextStyle(color: Colors.red,fontSize: 15),),),
-                                          ],
+                                        Text(
+                                          'جديد',
+                                          style: TextStyle(color: Colors.grey),
                                         ),
                                         SizedBox(
-                                          width: 20,
+                                          width: 3,
                                         ),
-
-                                        Column(
-                                          children: [
-                                            Container(  height: 120,
-                                                decoration: BoxDecoration(
-                                                  color: Colors.grey,
-                                                  borderRadius: BorderRadius.circular(20),),
-                                                child: three('https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')),
-                                            Container(height: 40,
-                                              child: Text('زرزور',style:  TextStyle(color: Colors.red,fontSize: 15),),),
-                                          ],
-                                        ),
-                                        SizedBox(
-                                          height: 40,
-                                        ),
+                                        Icon(Icons.shop_2, color: Colors.grey),
                                       ],
                                     ),
                                   ),
-                                 // Expanded(
-                                 //   child: ListView(
-                                 //      children: [
-                                 //        Column(children: [Row(children: [Text('زرزور',style: TextStyle(color: Colors.red,fontSize: 14),),
-                                 //          SizedBox(
-                                 //           width: 100,
-                                 //          ),
-                                 //          Text('زرزور',style: TextStyle(color: Colors.red,fontSize: 14),),
-                                 //          SizedBox(
-                                 //            width: 100,
-                                 //          ),
-                                 //          Text('زرزور',style: TextStyle(color: Colors.red,fontSize: 14),),],)],),
-                                 //      ],
-                                 //    ),
-                                 // )
-                                ]
-                              ),
-                            ),
-                            Container(
-                              height: 70,
-                              padding: EdgeInsets.all(10),
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                    child: ListView(
-                                      scrollDirection: Axis.horizontal,
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    height: 300,
+                                    width: 100,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[300],
+                                      borderRadius: BorderRadius.circular(25),
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                      Container(
-                                      width: 100,
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey[300],
-                                        borderRadius: BorderRadius.circular(25),
-                                      ),
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Text(
-                                            'جديد',
-                                            style: TextStyle(color: Colors.grey),
-                                          ),
-                                          SizedBox(
-                                            width: 3,
-                                          ),
-                                          Icon(Icons.shop_2, color: Colors.grey),
-                                        ],
-                                      ),
-                                    ),
-                                        SizedBox(
-                                          width: 10,
+                                        Text(
+                                          'حصري',
+                                          style: TextStyle(color: Colors.grey),
                                         ),
-                                    Container(
-                                      width: 100,
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey[300],
-                                        borderRadius: BorderRadius.circular(25),
-                                      ),
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Text(
-                                            'حصري',
-                                            style: TextStyle(color: Colors.grey),
-                                          ),
-                                          SizedBox(
-                                            width: 3,
-                                          ),
-                                          Icon(Icons.star_border, color: Colors.grey),
-                                        ],
-                                      ),
-                                    ),
                                         SizedBox(
-                                          width: 10,
+                                          width: 3,
                                         ),
-                        Container(
-                          width: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[300],
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                'توصيل مجاني',
-                                style: TextStyle(color: Colors.grey),
-                              ),
-                              SizedBox(
-                                width: 3,
-                              ),
-                              Icon(Icons.wallet_giftcard, color: Colors.grey),
-                            ],
-                          ),
-                        ),
+                                        Icon(Icons.star_border, color: Colors.grey),
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    height: 300,
+                                    width: 150,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[300],
+                                      borderRadius: BorderRadius.circular(25),
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'توصيل مجاني',
+                                          style: TextStyle(color: Colors.grey),
+                                        ),
                                         SizedBox(
-                                          width: 10,
+                                          width: 3,
                                         ),
-                              Container(
-                                width: 155,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[300],
-                                  borderRadius: BorderRadius.circular(25),
-                                ),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'توصيل الطلباتي',
-                                      style: TextStyle(color: Colors.grey),
+                                        Icon(Icons.wallet_giftcard, color: Colors.grey),
+                                      ],
                                     ),
-                                    SizedBox(
-                                      width: 3,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    height: 300,
+                                    width: 155,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[300],
+                                      borderRadius: BorderRadius.circular(25),
                                     ),
-                                    Icon(Icons.bike_scooter, color: Colors.grey),
-                                  ],
-                                ),
-                              ),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'توصيل الطلباتي',
+                                          style: TextStyle(color: Colors.grey),
+                                        ),
                                         SizedBox(
-                                          width: 10,
+                                          width: 3,
                                         ),
-                              Container(
-                                width: 150,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[300],
-                                  borderRadius: BorderRadius.circular(25),
-                                ),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'يدعم المحفظة',
-                                      style: TextStyle(color: Colors.grey),
+                                        Icon(Icons.bike_scooter, color: Colors.grey),
+                                      ],
                                     ),
-                                    SizedBox(
-                                      width: 3,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    height: 300,
+                                    width: 150,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[300],
+                                      borderRadius: BorderRadius.circular(25),
                                     ),
-                                    Icon(Icons.wallet, color: Colors.grey),
-                                  ],
-                                ),
-                              ),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'يدعم المحفظة',
+                                          style: TextStyle(color: Colors.grey),
+                                        ),
                                         SizedBox(
-                                          width: 10,
+                                          width: 3,
                                         ),
-                              Container(
-                                width: 120,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[300],
-                                  borderRadius: BorderRadius.circular(25),
-                                ),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'خصومات',
-                                      style: TextStyle(color: Colors.grey),
+                                        Icon(Icons.wallet, color: Colors.grey),
+                                      ],
                                     ),
-                                    SizedBox(
-                                      width: 3,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    height: 300,
+                                    width: 120,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[300],
+                                      borderRadius: BorderRadius.circular(25),
                                     ),
-                                    Icon(Icons.price_change_outlined, color: Colors.grey),
-                                  ],
-                                ),
-                              ),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'خصومات',
+                                          style: TextStyle(color: Colors.grey),
+                                        ),
                                         SizedBox(
-                                          width: 10,
+                                          width: 3,
                                         ),
-                              Container(
-                                width: 100,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[300],
-                                  borderRadius: BorderRadius.circular(25),
-                                ),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'الكل',
-                                      style: TextStyle(color: Colors.grey),
+                                        Icon(Icons.price_change_outlined, color: Colors.grey),
+                                      ],
                                     ),
-                                    SizedBox(
-                                      width: 3,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Container(
+                                    height: 300,
+                                    width: 100,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[300],
+                                      borderRadius: BorderRadius.circular(25),
                                     ),
-                                    Icon(Icons.home_outlined, color: Colors.grey),
-                                  ],
-                                ),
-                              ),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'الكل',
+                                          style: TextStyle(color: Colors.grey),
+                                        ),
+                                        SizedBox(
+                                          width: 3,
+                                        ),
+                                        Icon(Icons.home_outlined, color: Colors.grey),
                                       ],
                                     ),
                                   ),
                                 ],
-                              ),
-                            ),
-                            SizedBox(height: 20,),
-                            post('هازين','المنصور_14 رمضان','جيد جدا','سعر التوصيل1,500','https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600'),
-                            SizedBox(
-                              height: 40,
-                            ),
-                            post('رويال كالكسي\nتوصيل','المنصور','ممتاز','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=600'),
-                            SizedBox(
-                              height: 40,
-                            ),
-                            post('برجرات','المنصور','جيد جدا','سعر التوصيل1,500 د.ع','https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=600'),
-                                SizedBox(
-                                  height: 40,
-                                ),
-                                post('ملك المشويات','المنصور','جيد جيدا','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/11112699/pexels-photo-11112699.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'),
-                                SizedBox(
-                                  height: 40,
-                                ),
-                                post('علي باريس','المنصور','جيد جدا','سعر التوصيل1,500 د.ع','https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
-                                SizedBox(
-                                  height: 40,
-                                ),
-                                post('خان مندي','المنصور','جيد جدا','سعر التوصيل1,500 د.ع','https://images.pexels.com/photos/7426867/pexels-photo-7426867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
-                                SizedBox(
-                                  height: 40,
-                                ),
-                                post('تشيلي هاوس ','14 رمضان','جيد جدا','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/12916870/pexels-photo-12916870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
-                                SizedBox(
-                                  height: 40,
-                                ),
-                                post('اهواك','المنصور','ممتاز','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/1860200/pexels-photo-1860200.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'),
-                                SizedBox(
-                                  height: 40,
-                                ),
-                                post('باي بيتزا','المنصور','جيد جدا','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=600'),
-                              ])),
+                              );
 
+                            }),
+                      ),
                     ],
                   ),
                 ),
-              ],
+                SizedBox(height: 20,),
+                Container(
+                  height: MediaQuery.of(context).size.width*4,
+                  child:
+                  ListView.builder(
+
+                      itemCount: 1,
+                      itemBuilder: (BuildContext context, int index) {
+                        return
+                          Column(
+                            children: [
+                              post('هازين','المنصور_14 رمضان','جيد جدا','سعر التوصيل1,500','https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600'),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              post('رويال كالكسي\nتوصيل','المنصور','ممتاز','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=600'),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              post('برجرات','المنصور','جيد جدا','سعر التوصيل1,500 د.ع','https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=600'),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              post('ملك المشويات','المنصور','جيد جيدا','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/11112699/pexels-photo-11112699.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              post('علي باريس','المنصور','جيد جدا','سعر التوصيل1,500 د.ع','https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              post('خان مندي','المنصور','جيد جدا','سعر التوصيل1,500 د.ع','https://images.pexels.com/photos/7426867/pexels-photo-7426867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              post('تشيلي هاوس ','14 رمضان','جيد جدا','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/12916870/pexels-photo-12916870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              post('اهواك','المنصور','ممتاز','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/1860200/pexels-photo-1860200.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              post('باي بيتزا','المنصور','جيد جدا','سعر التوصيل2,500 د.ع','https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=600'),
+
+                            ],
+                          );
+                      }),
+                ),
+
+
+             ],
             )),
+
       bottomNavigationBar: Padding(
         padding: EdgeInsets.only(bottom: 0),
 

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
+import 'package:talabatey/logo.dart';
 import 'package:talabatey/splash.dart';
 
 import 'page.dart';
 import 'page2.dart';
 
 void main() {
-  runApp(MaterialApp(home: page2(),debugShowCheckedModeBanner: false,));
+  runApp(MaterialApp(home: page(),debugShowCheckedModeBanner: false,));
 }
 
 class MyApp extends StatelessWidget {
